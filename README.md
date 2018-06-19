@@ -1,1 +1,1 @@
-# individual-work
+# course-work
