@@ -5,10 +5,16 @@
 //>= - greater than or equal to
 //<= - less than or equal to
 
-let temp = 31
-let isFreezing = temp === 31
+let temp = 180
 
-console.log(isFreezing)
+if (temp <= 32) {
+    console.log('It is freezing outside!')
+}
+
+if(temp >= 110) {
+    console.log('It is way to hot outside!')
+    console.log('Testing123')
+}
 
 //Challenge
 //Create age set your age
@@ -17,10 +23,12 @@ console.log(isFreezing)
 //Print is child value
 //Print is senior value
 
-let age = 6
+let age = 65
 
-let isChild = age <= 7
-let isSenior = age >= 65
+if (age <= 7 ) {
+    console.log('Child Pricing')
+}
 
-console.log(isChild)
-console.log(isSenior)
+if (age >= 65 ) {
+    console.log('Senior Discount')
+}
