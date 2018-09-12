@@ -1,15 +1,24 @@
 //array create
-const notes = [{}, {
+const notes = [{
     title: 'My next trip',
     body: 'I would like to go to spain'
 }, {
     title: 'Habbits to work on',
     body: 'Exercise. Eating a bit better'
 }, {
-    title: "Office modification",
+    title: 'Office modification',
     body: 'Get a new seat'
 }]
 
+const findNote = function (notes, noteTitle) {
+    const note = notes.find(function(note, index) {
+        return note.title.toLowerCase() === noteTitle.toLowerCase()
+    })
+    return notes[index]
+}
+
+const note = findNote(notes, 'office modification')
+console.log(note)
 //Pop removes last item
 // console.log(notes.pop())
 // //Push adds to end of array
@@ -38,16 +47,20 @@ const notes = [{}, {
 //     console.log(item)
 // })
 
-console.log(notes.length)
-console.log(notes)
+// console.log(notes.length)
+// console.log(notes)
 
-// //Counting... 1
-// for (let count = 2; count >= 0; count--) {
-//     console.log(count)
-// }
+// // //Counting... 1
+// // for (let count = 2; count >= 0; count--) {
+// //     console.log(count)
+// // }
 
-// for (let count = notes.length-1; count >= 0; count--) {
-//     console.log(notes[count])
-// }
+// // for (let count = notes.length-1; count >= 0; count--) {
+// //     console.log(notes[count])
+// // }
 
-console.log(notes.indexOf('Note 2'))
+// // console.log(notes.indexOf('Note 2'))
+// const index = notes.findIndex(function (note, index) {
+//     return note.title === 'Habbits to work on'
+// })
+// console.log(index)
